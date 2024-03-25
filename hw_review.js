@@ -27,6 +27,20 @@
 // // console.log (typeof countee);
 // // console.log (typeof numberFromString);
 
+
+// let count = 42
+// console.log(count)
+// String(count)
+// console.log(count)
+// count.toString( )
+// console.log(count)
+// let userName = '42'
+// console.log(userName)
+// parseInt(userName)
+// console.log(userName)
+// Number(userName)
+// console.log(userName)
+
 // // 4
 
 // let a = 1
@@ -60,6 +74,14 @@
 // const lengthWords = (access + marine + ice + reproach + chopped).length;
 // console.log(lengthWords)
 
+// let name = "Kostya";
+// let age = 25;
+// let question = false;
+// console.log ("Variable: ${namee} has type: ${typeof name}");
+// console.log ("Variable: ${age} has type: ${typeof age}");
+// console.log ("Variable: ${question} has type: ${typeof question}");
+// console.log("Variable: %booleanVariable% have type: " + "%" + typeof booleanVariable + "%");
+
 // // Продвинутый уровень
 // // 1
 // let aa = 4;
@@ -68,6 +90,9 @@
 // aa = aa + bb; 
 // bb = aa - bb; 
 // aa = aa - bb; 
+
+// или 
+// [a, b] = [b, a];
 
 // // Можно так но мы это еще не проходили
 // // let a = 1;
@@ -89,9 +114,7 @@
 // const cipher = codeWord1[1] + codeWord2[1] + codeWord3[1] + codeWord4[1] + codeWord5[1];
 
 // console.log(cipher); 
-let name = "Kostya";
-let age = 25;
-let question = false;
-console.log ("Variable: ${namee} has type: ${typeof name}");
-console.log ("Variable: ${age} has type: ${typeof age}");
-console.log ("Variable: ${question} has type: ${typeof question}");
+
+// Хорошо сделанное ДЗ:
+// https://github.com/KostiLomit/Lesson-2-HW/blob/master/index.js
+// https://github.com/KirillPuzevich/JS_1/blob/main/hw.js
