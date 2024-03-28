@@ -258,3 +258,17 @@
 // } else {
 //     console.log('Все не так!')
 // }
+
+//First Task
+
+const stringValue = 'true';
+const booleanValue = false;
+const numberValue = 17;
+const undefinedValue = undefined;
+const nullValue = null;
+
+console.log(typeof stringValue);
+console.log(typeof booleanValue);
+console.log(typeof numberValue);
+console.log(typeof undefinedValue);
+console.log(typeof nullValue);
