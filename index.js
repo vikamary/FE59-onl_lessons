@@ -283,3 +283,11 @@ if (height > weight) {
 } else {
   console.log("Наибольшее число:", weight);
 }
+
+//3rd
+
+for (let i = 1; i <= 20; i++) {
+  if (i % 3 === 0) {
+    console.log("Число кратное трём:", i);
+  }
+}
