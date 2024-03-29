@@ -291,3 +291,14 @@ for (let i = 1; i <= 20; i++) {
     console.log("Число кратное трём:", i);
   }
 }
+
+//4th 
+
+let key = true;
+let documents = true;
+let pen = true;
+let apple = false;
+let orange = true;
+
+let shouldGoToWork = (key && documents && pen) || (apple && orange);
+console.log(shouldGoToWork);
