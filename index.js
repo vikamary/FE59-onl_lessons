@@ -302,3 +302,16 @@ let orange = true;
 
 let shouldGoToWork = (key && documents && pen) || (apple && orange);
 console.log(shouldGoToWork);
+
+//5th
+
+let count = parseInt(prompt("Введите число:"));
+  if(count % 3 === 0 && count % 5 ===0) {
+    console.log("FizBuz");
+  } else if (count % 3 === 0) {
+    console.log("Fiz");
+  } else if (count % 5 === 0) {
+    console.log("Buz");
+  } else {
+    console.log("Число не делится без остатктка ни на 3, на на 5");
+  }
