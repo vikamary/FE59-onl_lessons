@@ -272,3 +272,14 @@ console.log(typeof booleanValue);
 console.log(typeof numberValue);
 console.log(typeof undefinedValue);
 console.log(typeof nullValue);
+
+//2nd 
+
+const height = 15;
+const weight = 20;
+
+if (height > weight) {
+  console.log("Наибольшее число:", height);
+} else {
+  console.log("Наибольшее число:", weight);
+}
