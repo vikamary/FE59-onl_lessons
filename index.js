@@ -329,4 +329,25 @@ let count = parseInt(prompt("Введите число:"));
 
 // 7th Task
 
+let direction = prompt("В какую сторону света вы бы хотели отправиться?");
+let message;
+
+switch (direction.toLowerCase()) {
+  case "south":
+    message = "На юг пойдешь, счастье найдешь";
+    break;
+  case "north":
+    message = "На север пойдешь, много денег найдешь";
+    break;
+  case "west":
+    message = "На запад пойдешь, верного друга найдешь";
+    break;
+  case "east":
+    message = "На восток пойдешь, разработчиком станешь"
+    break;
+  default:
+    message = "Вы ввели неверные данные. Попробуйте ещё раз.";
+}
+
+console.log(message);
 
