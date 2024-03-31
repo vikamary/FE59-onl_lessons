@@ -316,11 +316,17 @@ let count = parseInt(prompt("Введите число:"));
     console.log("Число не делится без остатктка ни на 3, на на 5");
   }
 
-  //6th 
+//6th 
 
   let age = parseInt(prompt("Введите ваш возраст:"));
     if (age > 18) {
         console.log("Попей пивка");
+    } else if (age >= 16 && age <= 18) {
+      console.log("Можешь выкурить сигаретку, только маме не говори");
     } else {
       console.log("Пей колу");
     }
+
+// 7th Task
+
+
