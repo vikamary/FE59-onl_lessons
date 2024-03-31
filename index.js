@@ -351,3 +351,11 @@ switch (direction.toLowerCase()) {
 
 console.log(message);
 
+// level 1
+
+let userName = "пОлИнА нАбЕрЕжНаЯ";
+
+let correctName = userName.charAt(0).toUpperCase() + userName.slice(1).toLowerCase();
+
+alert("Привет, " + correctName + "!" );
+
