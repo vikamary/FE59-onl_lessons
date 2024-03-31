@@ -315,3 +315,12 @@ let count = parseInt(prompt("Введите число:"));
   } else {
     console.log("Число не делится без остатктка ни на 3, на на 5");
   }
+
+  //6th 
+
+  let age = parseInt(prompt("Введите ваш возраст:"));
+    if (age > 18) {
+        console.log("Попей пивка");
+    } else {
+      console.log("Пей колу");
+    }
