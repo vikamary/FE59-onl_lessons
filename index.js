@@ -359,3 +359,25 @@ let correctName = userName.charAt(0).toUpperCase() + userName.slice(1).toLowerCa
 
 alert("Привет, " + correctName + "!" );
 
+// Level 2
+
+let userCount = parseFloat(prompt("Введите число:"));
+let result = userCount;
+
+let operations = ['отнять', 'прибавить', 'умножить', 'разделить'];
+
+//operations
+
+//alert
+
+//Level 3
+
+let steps = 6;
+
+for (let i = 1; i<= steps; i++) {
+  let step = '';
+  for (let j = 1; j <= i; j++) {
+    step += '#';  
+  }
+  console.log(step);
+}
