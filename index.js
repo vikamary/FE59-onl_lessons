@@ -410,5 +410,15 @@
 
 
 
+//1
 
+const maxNumber = 100;
+
+function getSum(n) {
+  const max = n > maxNumber ? maxNumber : n;
+  return (max * (max + 1)) / 2;
+}
+
+const result = getSum(100);
+console.log(result);
 
