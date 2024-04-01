@@ -422,3 +422,21 @@ function getSum(n) {
 const result = getSum(100);
 console.log(result);
 
+//2
+
+function caclulateInterest(loanAmount) {
+  const annualInerestRate = 0.17;
+  const numberOfYears = 5;
+  let totalInterest = 0;
+
+  for (let i = 0; i < numberOfYears; i++) {
+    totalInterest += loanAmount * annualInerestRate;
+  }
+  return totalInterest;
+}
+
+const loanAmount = 1000;
+const totalInterest = caclulateInterest (loanAmount);
+console.log("Переплата по кредиту:", totalInterest.toFixed(2));
+
+
