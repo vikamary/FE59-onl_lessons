@@ -412,31 +412,12 @@
 
 //1
 
-const maxNumber = 100;
-
-function getSum(n) {
-  const max = n > maxNumber ? maxNumber : n;
-  return (max * (max + 1)) / 2;
-}
-
-const result = getSum(100);
-console.log(result);
-
-//2
-
-function caclulateInterest(loanAmount) {
-  const annualInerestRate = 0.17;
-  const numberOfYears = 5;
-  let totalInterest = 0;
-
-  for (let i = 0; i < numberOfYears; i++) {
-    totalInterest += loanAmount * annualInerestRate;
+function getSum (n) {
+  let sum = 0;
+  for (let i = 0; i <= n; i++) {
+    sum += i;
   }
-  return totalInterest;
+  return sum;
 }
 
-const loanAmount = 1000;
-const totalInterest = caclulateInterest (loanAmount);
-console.log("Переплата по кредиту:", totalInterest.toFixed(2));
-
-
+console.log(getSum(100));
