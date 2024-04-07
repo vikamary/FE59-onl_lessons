@@ -522,3 +522,16 @@ function fooBoo(bool, foo, boo) {
 
 fooBoo(true, foo, boo);
 fooBoo(false, foo, boo);
+
+//Advanced 1
+
+function triangle(a, b, c) {
+  return a + b > c && a + c > b && b + c > a;
+}
+
+console.log(triangle(2, 4, 3)); //true
+console.log(triangle(1, 2, 3));
+
+//Advanced 2
+
+//Advanced 3
