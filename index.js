@@ -421,3 +421,17 @@ function getSum (n) {
 }
 
 console.log(getSum(100));
+
+//2
+
+function calculateCredit (creditSum, interestRate, creditYears) {
+  const interestPayment = creditSum * (interestRate / 100) * creditYears;
+  return interestPayment;
+}
+
+const creditSum = 10000;
+const interestRate = 17;
+const creditYears = 5;
+const overpayment = calculateCredit (creditSum, interestRate, creditYears);
+
+console.log("Переплата по кредиту составит:", overpayment.toFixed(1));
