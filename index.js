@@ -502,3 +502,23 @@ console.log("getSum(1, 1):", getSum(1, 1));
 console.log("getSum(-1, 0):", getSum(-1, 0));
 console.log("getSum(-1, 2):", getSum(-1, 2));
 
+//6
+
+function foo() {
+  console.log("foo");
+}
+
+function boo() {
+  console.log("boo");
+}
+
+function fooBoo(bool, foo, boo) {
+  if (bool) {
+    foo();
+  } else {
+    boo();
+  }
+}
+
+fooBoo(true, foo, boo);
+fooBoo(false, foo, boo);
