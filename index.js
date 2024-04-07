@@ -435,3 +435,16 @@ const creditYears = 5;
 const overpayment = calculateCredit (creditSum, interestRate, creditYears);
 
 console.log("Переплата по кредиту составит:", overpayment.toFixed(1));
+
+//3
+
+function trimString (strString, from, to) {
+  if (from < 0 || to > strString.length) {
+    return "'from' и 'to' в пределах строки"
+  }
+  return strString.slice (from, to);
+}
+
+const string = "вкусная булочка с корицей";
+const cutString = trimString (string, 8, 15);
+console.log(cutString);
