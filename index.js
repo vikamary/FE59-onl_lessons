@@ -466,5 +466,39 @@ let number = 2024;
 let sum = getSumNumbers(number);
 console.log("Сумма цифр, из которых состоит число:", sum);
 
+//5
 
+function getSum (a, b) {
+  if (a === b) {
+    return a;
+  }
+  if (a > b) {
+    let temp = a;
+    a = b; 
+    b = temp;
+  }
+  let sum  = 0;
+  for (let i = a; i <= b; i++) {
+    sum += i;
+  }
+  return sum;
+}
+
+// Сравнение // Boolean
+
+// console.log(getSum(1, 0) === 1);
+// console.log(getSum(1, 2) === 3);
+// console.log(getSum(0, 1) === 1);
+// console.log(getSum(1, 1) === 1);
+// console.log(getSum(-1, 0) === -1);
+// console.log(getSum(-1, 2) === 2);
+
+// Результат // getSum
+
+console.log("getSum(1, 0):", getSum(1, 0));
+console.log("getSum(1, 2):", getSum(1, 2));
+console.log("getSum(0, 1):", getSum(0, 1));
+console.log("getSum(1, 1):", getSum(1, 1));
+console.log("getSum(-1, 0):", getSum(-1, 0));
+console.log("getSum(-1, 2):", getSum(-1, 2));
 
