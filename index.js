@@ -448,3 +448,23 @@ function trimString (strString, from, to) {
 const string = "вкусная булочка с корицей";
 const cutString = trimString (string, 8, 15);
 console.log(cutString);
+
+//4
+
+function getSumNumbers(number) {
+  let strNumber = number.toString();
+  let sum = 0;
+
+  for (let i = 0; i < strNumber.length; i++) {
+    let count = parseInt(strNumber[i]);
+    sum += count;
+  }
+  return sum;
+}
+
+let number = 2024;
+let sum = getSumNumbers(number);
+console.log("Сумма цифр, из которых состоит число:", sum);
+
+
+
