@@ -642,3 +642,16 @@ console.log("Object keys values");
 for (let key in student) {
   console.log(student[key]);
 }
+
+//4
+
+const colors = {
+  'ru pum pu ru rum': {
+  red: 'красный',
+  green: 'зеленый',
+  blue: 'синий'
+  },
+}
+
+console.log(colors['ru pum pu ru rum'].red);
+console.log(colors['ru pum pu ru rum'].blue);
