@@ -530,8 +530,55 @@ function triangle(a, b, c) {
 }
 
 console.log(triangle(2, 4, 3)); //true
-console.log(triangle(1, 2, 3));
+console.log(triangle(1, 2, 3)); //false
 
 //Advanced 2
 
+function chocolate (n, m) {
+  if (n <= 0 || m <= 0) {
+    return 0;
+  }
+  if (n === 1 && m === 1) {
+    return 0;
+  }
+  return (n * m) - 1;
+}
+
+console.log(chocolate(2, 1));
+
 //Advanced 3
+
+const phonePrice = 1000;
+const accessoryPrice = 100;
+const tax = 0.2;
+
+function calculateTax(amount) {
+  return amount * tax;
+}
+
+function cash(amount) {
+  return "$" + amount.toFixed(2);
+}
+
+let balance = parseFloat(prompt("Введите баланс вашего счёта:"));
+
+let totalAmount = 0;
+
+while (balance > totalAmount) {
+  totalAmount += phonePrice;
+
+  if (totalAmount <= balance) {
+    totalAmount += accessoryPrice;
+  }
+}
+
+let taxRate = calculateTax (totalAmount);
+totalAmount += taxRate;
+
+console.log("Общая стоимость покупки, включая налог:", cash(totalAmount));
+
+if (totalAmount <= balance) {
+  console.log("Вы можете себе это позволить."); 
+  } else {
+    console.log("У вас недостаточно средств. Не грусти!^-^");
+}
