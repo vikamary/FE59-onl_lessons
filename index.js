@@ -622,3 +622,23 @@ if ('keyy' in objectKeys) {
 } else {
   console.log(false);
 }
+
+//3
+
+const student = {
+  name: 'John',
+  age: 19,
+  isHappy: true
+}
+
+console.log("Object's keys");
+
+for (let key in student) {
+  console.log(key);
+}
+
+console.log("Object keys values");
+
+for (let key in student) {
+  console.log(student[key]);
+}
