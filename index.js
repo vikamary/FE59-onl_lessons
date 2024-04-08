@@ -590,3 +590,35 @@
 // console.log(user.address ? user.address.street : undefined);
 // console.log(user.address?.street?.knrnergjnrek?.fkweiofwkf?.fewplfowkefop); // undefined (без ошибки)
 
+//1
+
+const object = {
+  key1: 'value1',
+  key2: 'value2'
+}
+
+console.log("Object with keys", object);
+
+delete object.key1;
+delete object.key2;
+
+console.log("The object after deleting the keys", object);
+
+//2
+
+let objectKeys = {
+  key1: 'value1',
+  key2: 'value2'
+}
+
+if ('key1' in objectKeys) {
+  console.log(true); 
+} else {
+  console.log(false);
+}
+
+if ('keyy' in objectKeys) {
+  console.log(true);
+} else {
+  console.log(false);
+}
