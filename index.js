@@ -655,3 +655,25 @@ const colors = {
 
 console.log(colors['ru pum pu ru rum'].red);
 console.log(colors['ru pum pu ru rum'].blue);
+
+//5
+
+let salaries = {
+  andrey: 500,
+  sveta: 413,
+  anton: 987,
+  igor: 664,
+  alexandra: 199
+}
+
+let salary = 0;
+let employeeCount = 0;
+
+for (let key in salaries) {
+  salary += salaries[key];
+  employeeCount++;
+}
+
+let averageSalary = salary / employeeCount;
+
+console.log("Средняя зп сотрудников:", averageSalary);
