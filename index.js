@@ -705,3 +705,21 @@ function dataValidate() {
 
 requestUser();
 dataValidate();
+
+// Advanced 1
+
+function goalsWords (score) {
+  let = goals = score.split(':');
+
+  let numbers = ['ноль', 'один', 'два', 'три', 'четыре', 'пять', 'шесть', 'семь', 'восемь', 'девять'];
+  if (goals[0] >= 0 && goals[0] <= 9 && goals[1] >= 0 && goals[1] <= 9) {
+    console.log(`Ballspielverein Borussia забила ${numbers[parseInt(goals[0])]} голов, а Bayern München забила ${numbers[parseInt(goals[1])]} голов.`);
+  } else {
+    console.log('Ошибка. Некорректный формат результатов матча.');
+  }
+}
+
+goalsWords('2:5');
+
+// Advanced 2
+// Advanced 3
