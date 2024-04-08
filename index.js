@@ -677,3 +677,31 @@ for (let key in salaries) {
 let averageSalary = salary / employeeCount;
 
 console.log("Средняя зп сотрудников:", averageSalary);
+
+//6
+
+const user = {
+
+};
+
+function requestUser() {
+  let login = prompt("Введите логин:");
+  let password = prompt("Введите пароль:");
+
+user.login = login;
+user.password = password;
+}
+
+function dataValidate() {
+  let confirmedLogin = prompt("Введите Ваш логин");
+  let confirmedPassword = prompt("Введите Ваш пароль");
+
+  if (confirmedLogin === user.login && confirmedPassword === user.password) {
+    console.log("Добро пожаловать!");
+  } else {
+    console.log("Неверный логин или пароль, попробуйте ещё раз.");
+  }
+}
+
+requestUser();
+dataValidate();
