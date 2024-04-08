@@ -190,31 +190,123 @@
 // });
 // console.log(userList, newArry);
 
-const numbers = [0, -1, 458, -64328254];
+// const numbers = [0, -1, 458, -64328254];
 
-const isEveryItemMoreThenZero = numbers.every((item, index, array) => {
-    // if (item > 0) {
-    //     return true;
-    // } else {
-    //     return false;
-    // }
+// const isEveryItemMoreThenZero = numbers.every((item, index, array) => {
+//     // if (item > 0) {
+//     //     return true;
+//     // } else {
+//     //     return false;
+//     // }
 
-    // return item > 0 ? true : false;
+//     // return item > 0 ? true : false;
 
-    return item > 0;
-});
+//     return item > 0;
+// });
 
-console.log(isEveryItemMoreThenZero);
+// console.log(isEveryItemMoreThenZero);
 
-const isSomeItemMoreThenZero = numbers.some((item) => {
-    return item > 0;
-});
+// const isSomeItemMoreThenZero = numbers.some((item) => {
+//     return item > 0;
+// });
 
-console.log(isSomeItemMoreThenZero);
+// console.log(isSomeItemMoreThenZero);
 
-// userList.find();
-// userList.filter();
-// userList.reduce();
-// userList.includes('');
-// userList.sort();
-// userList.reverse();
+// // userList.find();
+// // userList.filter();
+// // userList.reduce();
+// // userList.includes('');
+// // userList.sort();
+// // userList.reverse();
+
+
+//1
+
+const colors = ['red', 'green', 'blue']
+console.log(colors.length);
+
+//2
+
+const animals = ['monkey', 'dog', 'cat']
+const lastEl = animals[animals.length - 1];
+console.log(lastEl);
+
+//3
+
+const numbers = [5, 43, 63, 23, 90];
+numbers.length = 0;
+console.log(numbers);
+
+const numbers1 = [5, 43, 63, 23, 90];
+numbers1.splice(0, numbers1.length);
+console.log(numbers1);
+
+//4
+
+const students = ['Polina', 'Dasha', 'Masha'];
+students.pop();
+students.push('Borya');
+
+students.shift();
+students.unshift('Andrey');
+
+console.log(students);
+
+//5
+
+const cats = ['Gachito', 'Tom', 'Batman'];
+
+// for
+for (let i = 0; i < cats.length; i++) {
+    console.log(cats[i]);
+}
+
+console.log('');
+
+// for..of
+for (let cat of cats) {
+    console.log(cat);
+}
+
+//6
+
+const evenNumbers = [2, 4, 6, 8, 10];
+const oddNumbers = [1, 3, 5, 7, 9];
+
+const allNumbers = evenNumbers.concat(oddNumbers);
+console.log(allNumbers);
+
+const searchIndex = allNumbers.indexOf(8);
+console.log("Index 8:", searchIndex);
+
+//7 (not ready)
+
+// const binary = [0, 0, 0, 0];
+// const binaryString = binary.join('');
+// console.log(binaryString);
+
+// Advanced 1
+
+// Advanced 2
+
+// Advanced 3
+
+const mixedNumbers = [-14, 24, -89, 43, 0 , -1, 412, 4];
+
+let posNumbers = [];
+let negNumbers = [];
+
+for (let number of mixedNumbers) {
+    if (number >= 0) {
+        posNumbers.push(number);
+    } else {
+        negNumbers.push(number);
+    }
+}
+
+console.log("Положительные числа:", posNumbers);
+console.log("Негативные числа:", negNumbers);
+
+
+
+
