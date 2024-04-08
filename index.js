@@ -722,4 +722,37 @@ function goalsWords (score) {
 goalsWords('2:5');
 
 // Advanced 2
+
+let student1 = {
+  name: 'Polina',
+  age: 27,
+  }
+  let student2 = {
+  name: 'Polina',
+  age: 27,
+}
+
+if (JSON.stringify(student1) === JSON.stringify(student2)) {
+  console.log("Объекты равны.");
+} else {
+  console.log("Объекты не равны.")
+}
+
 // Advanced 3
+
+const animals = {
+  cat: {
+  name: 'Енчик',
+  age: 3,
+  },
+  dog: {
+  name: 'Орео',
+  age: 2,
+  }
+}
+
+if (animals.bird) {
+  console.log(animals.bird.name);
+} else {
+  console.log("В объекте animals нет птицы.")
+}
