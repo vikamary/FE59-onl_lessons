@@ -7,29 +7,50 @@
   <link rel="stylesheet" href="/Task/src/scss/main.css">
 </head>
 <body>
-  <div class="section">
-    <button>Delete All</button>
-    <button>Delete Last</button>
-    <input type="text" placeholder="Enter todo ...">
-    <button>Add</button>
-</div>
-
-<div class="section">
-    <div>All: 2</div>
-    <div>Completed: 1</div>
-    <button>Show All</button>
-    <button>Show Completed</button>
-    <input type="text" placeholder="Search...">
-</div>
-
-<div class="window-container">
-    <div class="item">
-        <input type="checkbox">
-        <input type="text" placeholder="Todo text">
-        <button class="date-btn">Date</button>
-        <button class="close-btn">X</button>
+  <section class="todo">
+    <div class="todo__wrapper-list">
+      <div class="todo__enter">
+        <button class="todo__enter-delete-all">Delete All</button>
+        <button class="todo__enter-delete-last">Delete Last</button>
+        <input type="text" class="todo__enter-input" placeholder="Enter todo ...">
+        <button class="todo__enter-add">Add</button>
+      </div>
+      <div class="todo__search">
+        <div class="search__all">
+          <p class="search__all-desc">All:</p>
+          <div class="search__all-value">2</div>
+        </div>
+        <div class="search__completed">
+          <p class="search__completed-desc">Completed:</p>
+          <div class="search__completed-value">1</div>
+        </div>
+        <button class="search__show-all">Show All</button>
+        <button class="search__show-completed">Show Completed</button>
+        <input type="text" class="search__input" placeholder="Search...">
+      </div>
+      <ul class="todoes__content">
+        <li class="todo__item">
+          <div class="todo__wrapper">
+            <input type="checkbox" class="todo__completed">
+            <input type="text" class="todo__text" placeholder="Todo text">
+            <div class="todo__action">
+              <button class="todo__close">X</button>
+              <div class="todo__date">Date</div>
+            </div>
+          </div>
+        </li>
+        <li class="todo__completed">
+          <div class="todo__wrapper">
+            <input type="checkbox" class="todo__completed">
+            <input type="text" class="todo__text" placeholder="Todo text">
+            <div class="todo__action">
+              <button class="todo__close">X</button>
+              <div class="todo__date">Date</div>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
-</div>
-
+  </section>
 </body>
 </html>

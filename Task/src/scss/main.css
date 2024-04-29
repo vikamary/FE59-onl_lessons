@@ -1,98 +1,44 @@
-button {
+.todo .todo__wrapper-list {
+  background-color: #d7d7d7;
+  border: 1px solid #121212;
   border-radius: 10px;
-  width: 150px;
+  margin: 12px;
 }
-
-.section {
-  margin: 20px;
+.todo .todo__enter {
   display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.todo .todo__search {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.todo .search__all {
+  display: flex;
+  gap: 2px;
+}
+.todo .search__completed {
+  display: flex;
+  gap: 2px;
+}
+.todo .todoes__content {
+  display: grid;
   justify-content: center;
   gap: 20px;
-  align-items: center;
 }
-
-.section button {
-  padding: 20px 8px;
-  border: none;
-  border-radius: 5px;
-  background-color: #007bff;
-  color: #fff;
-  cursor: pointer;
-}
-
-.section input[type=text] {
-  padding: 20px 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  width: 400px;
-  text-align: center;
-}
-
-.section button:hover {
-  background-color: #0056b3;
-}
-
-.item {
-  margin-bottom: 10px;
+.todo .todo__wrapper {
+  border: 1px solid #121212;
+  background-color: #717171;
+  max-width: 400px;
   display: flex;
-  align-items: center;
-  position: relative;
 }
-
-.item input[type=checkbox] {
-  margin-right: 8px;
-}
-
-.item input[type=text] {
-  width: 85%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  text-align: center;
-}
-
-.item button {
-  width: 50px;
-  padding: 8px 16px;
-  border: none;
-  background-color: #007bff;
-  color: #fff;
-  cursor: pointer;
-}
-
-.item .close-btn {
-  position: absolute;
-  border-radius: 7px;
-  top: -16px;
-  right: -16px;
-}
-
-.item .date-btn {
-  position: absolute;
-  border-radius: 7px;
-  background-color: #ccd8f2;
-  color: #ffffff;
-  bottom: -25px;
-  right: -16px;
-}
-
-.item button:hover {
-  background-color: #0056b3;
-}
-
-.window-container {
-  width: 36%;
-  margin: 0 auto;
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: relative;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+ul li {
+  list-style: none;
 }/*# sourceMappingURL=main.css.map */
