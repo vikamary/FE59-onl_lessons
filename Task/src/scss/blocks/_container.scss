@@ -5,12 +5,16 @@
     border: 1px solid #121212;
     border-radius: 10px;
     margin: 12px;
+
   }
   
   .todo__enter {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 20px;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
     
   }
   
@@ -23,7 +27,9 @@
   }
   
   .todo__enter-input {
-    
+    width: 600px;
+    border-radius: 5px;
+    text-align: center;
   }
   
   .todo__enter-add {
@@ -32,13 +38,15 @@
   
   .todo__search {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 60px;
     margin-bottom: 30px;
+    align-items: center;
   }
   
   .search__all {
     display: flex;
-    gap: 2px;
+    gap: 10px;
   }
   
   .search__all-desc {
@@ -51,7 +59,7 @@
   
   .search__completed {
     display: flex;
-    gap: 2px;
+    gap: 10px;
   }
   
   .search__completed-desc {
@@ -71,13 +79,18 @@
   }
   
   .search__input {
-    
+    width: 200px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
   }
   
   .todoes__content {
     display: grid;
     justify-content: center;
     gap: 20px;
+
+    margin-bottom: 20px;
   }
   
   .todo__item {
@@ -87,17 +100,25 @@
   .todo__wrapper{
     border: 1px solid #121212;
     background-color: #717171;
+    border-radius: 10px;
 
-    max-width: 400px;
+    padding: 20px;
+    max-width: 600px;
     display: flex;
+    align-items: center;
+    gap: 20px;
   }
 
-  .todo__completed {
-  
+  .todo__completed-check {
+    width: 30px;
+    height:  30px;
   }
   
   .todo__text {
-    
+    width: 500px;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
   }
   
   .todo__action {
@@ -105,11 +126,13 @@
   }
   
   .todo__close {
-    
+    margin-bottom: 10px;
   }
   
   .todo__date {
-    
+    padding: 5px;
+    background-color: #d7d7d7;
+    border-radius: 5px;
   }
 
 }

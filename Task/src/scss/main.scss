@@ -10,3 +10,17 @@ ul
 li {
 	list-style: none;
 }
+
+.btn {
+  padding: 10px 30px;
+  background-color: aquamarine;
+  border-radius: 5px;
+
+  &--large{
+    padding: 10px 50px;
+  }
+
+  &--small{
+    padding: 5px;
+  }
+}
